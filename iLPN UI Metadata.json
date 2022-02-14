@@ -41,8 +41,8 @@
                     "LabelKey": "dci.Ilpn.PhysicalEntityCode.displayText"
                   },
                   {
-                    "AttributeName": "ToBeConsolidated",
-                    "LabelKey": "dci.Ilpn.ToBeConsolidated.displayText"
+                    "AttributeName": "AsnId",
+                    "LabelKey": "dci.Ilpn.AsnId.displayText"
                   },
                   {
                     "AttributeName": "TotalQuantity",
@@ -93,6 +93,14 @@
                   {
                     "AttributeName": "ShipmentId",
                     "LabelKey": "dci.Ilpn.ShipmentId.displayText"
+                  },
+                  {
+                    "AttributeName": "CountryOfOrigin",
+                    "LabelKey": "dci.LocationItemAssignment.CountryOfOrigin.displayText"
+                  },
+                  {
+                    "AttributeName": "StockCategory",
+                    "LabelKey": "dci.LocationItemAssignment.InventoryAttribute1.displayText"
                   }
                 ]
               }
