@@ -1,0 +1,176 @@
+{
+  "Data": [
+    {
+      "EntityName": "Ilpn",
+      "ListConfig": [
+        {
+          "PrimaryList": {
+            "Columns": [
+              {
+                "Attributes": [
+                  {
+                    "AttributeName": "IlpnStatusDescription",
+                    "LabelKey": "dci.Ilpn.StatusDescription.displayText"
+                  }
+                ]
+              },
+              {
+                "Attributes": [
+                  {
+                    "AttributeName": "BusinessUnitId",
+                    "LabelKey": "BusinessUnit"
+                  },
+                  {
+                    "AttributeName": "Status",
+                    "LabelKey": "dci.Ilpn.Status.Code.displayText"
+                  },
+                  {
+                    "AttributeName": "IlpnId",
+                    "LabelKey": "dci.Ilpn.IlpnId.displayText"
+                  },
+                  {
+                    "AttributeName": "IlpnTypeDescription",
+                    "LabelKey": "dci.Ilpn.LpnType.displayText"
+                  },
+                  {
+                    "AttributeName": "ParentLpnId",
+                    "LabelKey": "dci.Ilpn.ParentLpnId.displayText"
+                  },
+                  {
+                    "AttributeName": "PhysicalEntityCodeDescription",
+                    "LabelKey": "dci.Ilpn.PhysicalEntityCode.displayText"
+                  },
+                  {
+                    "AttributeName": "ToBeConsolidated",
+                    "LabelKey": "dci.Ilpn.ToBeConsolidated.displayText"
+                  },
+                  {
+                    "AttributeName": "TotalQuantity",
+                    "LabelKey": "dci.Ilpn.TotalQuantity.displayText"
+                  }
+                ]
+              },
+              {
+                "Attributes": [
+                  {
+                    "AttributeName": "CurrentLocationId",
+                    "LabelKey": "dci.Ilpn.CurrentLocationId.displayText"
+                  },
+                  {
+                    "AttributeName": "CurrentLocationTypeId",
+                    "LabelKey": "dci.Ilpn.CurrentLocationType.displayText"
+                  },
+                  {
+                    "AttributeName": "IlpnConditionCodeCount",
+                    "FeatureFlag": "SUP-189128#2021-04",
+                    "LabelKey": "dci.Ilpn.IlpnConditionCodeCount.displayText"
+                  },
+                  {
+                    "AttributeName": "InventoryIlpnConditionCodeCount",
+                    "FeatureFlag": "SUP-189128#2021-04",
+                    "LabelKey": "dci.Ilpn.InventoryConditionCodeCount.displayText"
+                  }
+                ]
+              },
+              {
+                "Attributes": [
+                  {
+                    "AttributeName": "ItemId",
+                    "LabelKey": "dci.Ilpn.ItemId.displayText",
+                    "Link": {
+                      "MenuId": "item",
+                      "RelationshipName": "IlpnToItem"
+                    }
+                  },
+                  {
+                    "AttributeName": "CompositeItem_Description",
+                    "LabelKey": "ItemInventory.Description.displayText"
+                  },
+                  {
+                    "AttributeName": "OrgId",
+                    "LabelKey": "dci.Ilpn.OrgId.displayText"
+                  },
+                  {
+                    "AttributeName": "ShipmentId",
+                    "LabelKey": "dci.Ilpn.ShipmentId.displayText"
+                  }
+                ]
+              }
+            ],
+            "Actions": [
+              "Details",
+              "Edit",
+              "PrintILpn",
+              "ApplyConditions",
+              "RemoveConditions",
+              "Cancel",
+              "Deallocate"
+            ]
+          },
+          "Links": [
+            {
+              "LabelKey": "dci.Ilpn.Asn.displayText",
+              "MenuId": "ASN",
+              "RelationshipName": "IlpnToAsn"
+            },
+            {
+              "LabelKey": "dci.Ilpn.TaskDetail.displayText",
+              "MenuId": "taskDetail",
+              "RelationshipName": "IlpnToTaskDetail"
+            },
+            {
+              "LabelKey": "dci.Ilpn.Task.displayText",
+              "MenuId": "task",
+              "RelationshipName": "IlpnToTask"
+            },
+            {
+              "LabelKey": "dci.LocationItemAssignment.InventoryDetails.displayText",
+              "MenuId": "inventoryDetails",
+              "RelationshipName": "IlpnToInventory"
+            },
+            {
+              "LabelKey": "dci.Ilpn.InventoryVisibility.displayText",
+              "MenuId": "inventory",
+              "RelationshipName": "IlpnToInventoryVisibility"
+            },
+            {
+              "LabelKey": "dci.Pallet.InventoryVisibility.displayText",
+              "MenuId": "inventory",
+              "RelationshipName": "PalletToInventoryVisibility"
+            },
+            {
+              "LabelKey": "dci.Ilpn.ItemId.displayText",
+              "MenuId": "item",
+              "RelationshipName": "IlpnToItem"
+            },
+            {
+              "LabelKey": "dci.Ilpn.CurrentLocationId.displayText",
+              "MenuId": "locations",
+              "RelationshipName": "IlpnToLocation"
+            },
+            {
+              "LabelKey": "dci.Ilpn.WarehouseActivityTracking.displayText",
+              "MenuId": "WarehouseActivityTracking",
+              "RelationshipName": "IlpnToWarehouseActivityTracking"
+            },
+            {
+              "LabelKey": "dci.Ilpn.MHEJournal.displayText",
+              "MenuId": "whseDeviceIntegrationMessageJournal",
+              "RelationshipName": "IlpnTowhseDeviceIntegrationMessageJournal"
+            },
+            {
+              "LabelKey": "dci.Ilpn.warehousePrintJournal.displayText",
+              "MenuId": "WarehousePrintJournalSummary",
+              "RelationshipName": "IlpnToWarehousePrintJournal"
+            },
+            {
+              "LabelKey": "dci.Ilpn.IlpnToContainerConditionVisibility.displayText",
+              "MenuId": "containerConditionVisibility",
+              "RelationshipName": "IlpnToContainerCondition"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
